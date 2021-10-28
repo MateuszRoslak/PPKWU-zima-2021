@@ -1,6 +1,5 @@
 package com.example.demo;
 
-import com.google.gson.JsonObject;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -12,15 +11,15 @@ import java.util.regex.Pattern;
 
 @RestController
 public class ScannerController {
-    int upperLetters = 0;
-    int lowerLetters = 0;
-    int numbers = 0;
-    int specialChars = 0;
-    int otherChars = 0;
-
     @GetMapping("/scanner")
     @ResponseBody
     public String getParam(@RequestParam String string) {
+        int upperLetters = 0;
+        int lowerLetters = 0;
+        int numbers = 0;
+        int specialChars = 0;
+        int otherChars = 0;
+
         Pattern upperLettersPattern = Pattern.compile("[A-Z]");
         Matcher matcher = upperLettersPattern.matcher(string);
 
