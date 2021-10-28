@@ -14,13 +14,11 @@ INPUT:<br>
 
 OUTPUT:<br>
 
+
     {
-    "stringMetadata":
-        {
-            "upperLetters" : 1
-            "lowerLetters" : 2
-            "numbers": 3
-            "specialChars" : 1
-            "otherChars" : 0
-        }
+        "upperLetters" : 1
+        "lowerLetters" : 2
+        "numbers": 3
+        "specialChars" : 1
+        "otherChars" : 0
     }
